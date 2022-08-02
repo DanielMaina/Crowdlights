@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import { CrowdlightsContext } from "../context/CrowdlightsContext";
 
 
@@ -21,6 +21,7 @@ const Slider = () => {
   };
 
   return (
+    // <>
     // <div class="relative pt-1">
     //     <input
     //         type="range"
@@ -50,7 +51,7 @@ const Slider = () => {
     //         <li className="flex justify-center relative"><span className="absolute">5</span></li>
     //     </ul>
     // </div>
-
+    // </>
   <>
   <button onClick={toggleMax}>{state === 5 ? "Min" : "Max"}</button>
   <div style={{ display: "flex", gap: "1rem" }}>
