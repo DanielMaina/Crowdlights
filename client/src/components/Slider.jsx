@@ -55,12 +55,12 @@ const Slider = () => {
   <>
   <button onClick={toggleMax}>{state === 5 ? "Min" : "Max"}</button>
   <div style={{ display: "flex", gap: "1rem" }}>
-    <button disabled={state >= 5} onClick={increment}>
-      +
-    </button>
-    <div>{state}</div>
     <button disabled={state <= 0} onClick={decrement}>
       -
+    </button>
+    <div>{state}</div>
+    <button disabled={state >= 5} onClick={increment}>
+      +
     </button>
   </div>
   </>
